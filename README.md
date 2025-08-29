@@ -107,7 +107,7 @@ realtime-sentiment-stocks/
 └─ .env.example
 ```
 
-##How It Works
+## How It Works
 Backend:
 - Polls live stock prices and latest news.
 - Calculates 5-minute rolling sentiment average per stock.
@@ -119,7 +119,7 @@ Frontend:
 - Renders PriceChart and SentimentStream charts.
 - Provides interactive ticker selection.
 
-##Dashboard Charts
+## Dashboard Charts
 Price Chart
 - Line chart of live 1-minute prices.
 Sentiment & Prediction
@@ -128,7 +128,7 @@ Sentiment & Prediction
 - Green: Predicted Up Probability (0–1)
 - Reference line at 0 for easy visualization of positive/negative sentiment.
 
-##Key Learnings / Skills Demonstrated
+## Key Learnings / Skills Demonstrated
 - Real-time data streaming (WebSockets)
 - Asynchronous Python & FastAPI
 - Online machine learning (incremental SGDClassifier)
