@@ -108,21 +108,22 @@ realtime-sentiment-stocks/
 ```
 
 ## How It Works
-Backend:
+# 1) Backend:
 - Polls live stock prices and latest news.
 - Calculates 5-minute rolling sentiment average per stock.
 - Updates online logistic regression model with sentiment & 1-minute price changes.
 - Streams price, sentiment, and prediction probability via WebSocket.
-Frontend:
+
+# 2) Frontend:
 - Connects to WebSocket for live updates.
 - Stores the latest 300 data points.
 - Renders PriceChart and SentimentStream charts.
 - Provides interactive ticker selection.
 
 ## Dashboard Charts
-Price Chart
+# Price Chart:
 - Line chart of live 1-minute prices.
-Sentiment & Prediction
+# Sentiment & Prediction:
 - Area chart with two series:
 - Blue: 5-minute rolling sentiment (-1 to 1)
 - Green: Predicted Up Probability (0–1)
